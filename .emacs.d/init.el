@@ -41,14 +41,16 @@
  '(fundamental-mode-default ((t (:inherit default))))
  '(highlight ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
  '(isearch ((((class color) (min-colors 8)) (:background "yellow" :foreground "black"))))
- '(linum ((t (:foreground "black" :weight bold))))
+ '(linum ((t (:foreground "black" :weight bold :background "light blue"))))
  '(region ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
  '(secondary-selection ((((class color) (min-colors 8)) (:background "gray" :foreground "cyan"))))
  '(show-paren-match ((((class color) (background light)) (:background "black"))))
  '(vertical-border ((t nil)))
 )
 
-;; ------------
+(global-linum-mode 1)
+
+;;s ------------
 ;; -- Macros --
 ;; ------------
 (load "defuns-config.el")
